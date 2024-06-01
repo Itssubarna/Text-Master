@@ -1,5 +1,6 @@
 // TextMaster.js
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './textmaster.css';
 
 function TextMaster() {
@@ -23,7 +24,8 @@ function TextMaster() {
 
   return (
     <div className="text-master-container">
-      <div className="textmaster-text">TextMaster</div>
+      {/* Use Link to navigate to the landing page */}
+      <Link to="/" className="textmaster-text" style={{ textDecoration: 'none' }}>TextMaster</Link>
       <div className="main-content">
         <div className="input-box">
           <h2>Enter Text</h2>
@@ -41,9 +43,10 @@ function TextMaster() {
           <div className="word-count">{countWords(outputText)}/{maxWords}</div>
         </div>
       </div>
-      <button onClick={handleParaphrase} className="paraphrase-button">
-        Summarize
-      </button>
+      <button onClick={handleParaphrase} className="action-button">
+      Summarize
+    </button>
+
     </div>
   );
 }

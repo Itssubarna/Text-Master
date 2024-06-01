@@ -17,6 +17,7 @@
   top: 20px;
   left: 20px;
   z-index: 1;
+  text-decoration: none; /* Remove underline */
 }
 
 .main-content {
@@ -28,7 +29,7 @@
   flex: 1;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px
+  box-shadow: 0 2px;
 }
 
 .output-box {
@@ -66,7 +67,6 @@ h2 {
   text-align: left; 
 }
 
-
 .word-count {
   font-size: 14px;
   color: #333;
@@ -75,8 +75,9 @@ h2 {
   left: 20px;
 }
 
-.paraphrase-button {
-  background-color: #0f7e0f;
+/* Button styling */
+.action-button {
+  background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -90,6 +91,6 @@ h2 {
   transform: translateX(-50%);
 }
 
-.paraphrase-button:hover {
-  background-color: #90db98;
+.action-button:hover {
+  background-color: #0056b3;
 }

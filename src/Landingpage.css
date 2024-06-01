@@ -1,0 +1,114 @@
+.LandingPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .master-container {
+    border-radius: 50%;
+    border: 4px solid #333;
+    padding: 20px;
+    background-color: #e0e0e0;
+  }
+  
+  .animated-heading {
+    font-size: 3rem;
+    color: #fff; /* Change text color to white */
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInDown 1s ease-out forwards;
+  }
+  
+  .animated-paragraph {
+    font-size: 1.2rem;
+    color: #fff; /* Change text color to white */
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+  }
+  
+  .cta-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #444; /* Adjust button color */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 1s forwards;
+  }
+  
+  
+  .cta-button:hover {
+    background-color: #666; /* New background color on hover */
+    color: #ddd; /* New text color on hover */
+  }
+  
+  .arrow-behind {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .arrow-behind::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px; /* Adjust the position */
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #fff; /* Change arrow color to white */
+    transform: translateY(-50%);
+  }
+  
+  .textmaster-animation {
+    opacity: 1;
+    animation: textmasterFadeIn 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes textmasterFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
